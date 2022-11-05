@@ -9,7 +9,7 @@ const Login = () => {
         const payload = {
             email, password
         }
-        fetch("http://localhost:6969/login", {
+        fetch(`${process.env.REACT_APP_BASE}/login`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

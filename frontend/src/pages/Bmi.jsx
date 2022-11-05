@@ -9,7 +9,7 @@ const BmiCalculator = () => {
     const payload = {
       height, weight
     }
-    fetch("http://localhost:6969/calculateBMI", {
+    fetch(`${process.env.REACT_APP_BASE}/calculateBMI`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',

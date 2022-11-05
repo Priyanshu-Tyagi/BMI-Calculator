@@ -7,7 +7,7 @@ const History = () => {
   const [data, setData] = useState([]);
   const token = localStorage.getItem("token") || null;
 
-  axios.get("http://localhost:6969/getcalculation", { headers: { 'Authorization': 'Bearer ' + token } })
+  axios.get(`${process.env.REACT_APP_BASE}/getcalculation`, { headers: { 'Authorization': 'Bearer ' + token } })
     .then((res) => { setData(res.data) })
 
   if (token) {
