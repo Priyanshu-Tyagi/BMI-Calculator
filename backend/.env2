@@ -1,5 +1,0 @@
-MogoDB_URL = mongodb+srv://manu:m123@psc.bcmfeez.mongodb.net/?retryWrites=true&w=majority
-
-PORT = 6969
-
-Secret_KEY = abcd1234z
